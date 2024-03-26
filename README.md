@@ -1,0 +1,2 @@
+# SFA
+Simple. Fast. Auto.
