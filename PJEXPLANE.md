@@ -12,4 +12,6 @@ url = 구매 예정
 # Requirements
 1. 테마는 Black & While
 2. 로그인
-3. 
+
+
+develop도 github action이 발동하는지 테스트
