@@ -1,4 +1,4 @@
-# TOY PROJECT
+# SFA Project
 > yooseunghyeon.kr
 
 ## 목표
