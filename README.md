@@ -1,5 +1,4 @@
-# SFA Project 321
-# SFA Project 123
+# SFA Project
 > yooseunghyeon.kr
 
 ## 목표
