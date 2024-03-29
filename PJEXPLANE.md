@@ -13,6 +13,4 @@ url = 구매 예정
 1. 테마는 Black & While
 2. 로그인
 
-
-develop도 github action이 발동하는지 테스트
-...
+우선 develop 상태에서 push 하고 확인하기
