@@ -17,14 +17,21 @@
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
+<<<<<<< HEAD
 		"mdsvex": "^0.11.0",
+=======
+>>>>>>> b5cce44b54bebfb69b40566fb87da96cf74bf541
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^4.2.7",
 		"vite": "^5.0.3"
 	},
+<<<<<<< HEAD
 	"type": "module",
 	"dependencies": {
 		"@picocss/pico": "^2.0.6"
 	}
+=======
+	"type": "module"
+>>>>>>> b5cce44b54bebfb69b40566fb87da96cf74bf541
 }

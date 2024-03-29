@@ -1,5 +1,5 @@
-# TOY PROJECT
-> yooseunghyeon.kr
+# SFA Project
+> url
 
 ## 목표
 여러 기술을 공부하고 적용해보는데 필요한 Sample Program & 개인 포트폴리오 제작을 위해 시작한 프로젝트
@@ -7,7 +7,7 @@
 ## 구성
 **Front : Sveltek** <br>
 **Back : Fast API** <br>
-**DB : 미정** <br>
+**DB : MariaDB** <br>
 **Infra : AWS(EC2) + Git & GitHub + GitHub Action + Docker**
 
 ## 구현 요소
