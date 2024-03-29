@@ -1,6 +1,3 @@
-<script>
-
-</script>
 
 <body>
     <header class="container">
