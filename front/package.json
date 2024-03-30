@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@picocss/pico": "^2.0.6"
+		"@picocss/pico": "^2.0.6",
+		"@sveltejs/adapter-node": "^5.0.1"
 	}
 }
