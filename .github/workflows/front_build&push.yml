@@ -14,12 +14,15 @@ on:
 jobs:   
   build:    #job 이름 지정  
     runs-on: ubuntu-latest     # 실행 환경 설정
+    defaults:
+      run:
+        working-directory: front
     
     steps:     # 순차 실행할 내용 세팅
     - name: Checkout    # 리포지토리에 있는 내용 가져오기
       uses: actions/checkout@v4
       with:
-        path: front/*
+        path: front
       
     # nodejs 및 npm 설치
     - run: ls -al
