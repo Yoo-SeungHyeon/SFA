@@ -18,7 +18,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - run: ls -al
+    - run: cd front
       
     - name: Use Node.js 20
       uses: actions/setup-node@v3
@@ -26,7 +26,6 @@ jobs:
         node-version: 20
         cache: 'npm'
         
-    - run: cd front
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
