@@ -21,8 +21,6 @@ jobs:
     steps:     # 순차 실행할 내용 세팅
     - name: Checkout    # 리포지토리에 있는 내용 가져오기
       uses: actions/checkout@v4
-      with:
-        path: front
       
     # nodejs 및 npm 설치
     - run: ls -al
@@ -31,8 +29,8 @@ jobs:
     - run: sudo apt install npm
 
     # front 폴더에서 의존성 설치해서 build 진행
-    - run: sudo npm i
-    - run: sudo npm run build
+    - run: npm install
+    - run: npm run build
     
     # 도커 buildx 설치
     - name: Set Docker
