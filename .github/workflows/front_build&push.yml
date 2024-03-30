@@ -19,9 +19,7 @@ jobs:
     - name: Checkout    # 리포지토리에 있는 내용 가져오기
       uses: actions/checkout@v4
       with:
-        path: front
-        
-    - working-directory: front
+        path: front/*
       
     # nodejs 및 npm 설치
     - run: ls -al
