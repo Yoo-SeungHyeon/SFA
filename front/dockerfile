@@ -4,13 +4,13 @@ RUN mkdir -p /app
 
 WORKDIR /app/
 
-COPY /front/package.json .
+COPY /package.json .
 
 RUN npm install -g npm@10.5.0
 
 RUN npm install
 
-COPY front/build .
+COPY /build .
 
 CMD [ "node","index.js" ]
 
