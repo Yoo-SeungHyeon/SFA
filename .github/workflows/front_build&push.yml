@@ -20,6 +20,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: front
+        
+    - working-directory: front
       
     # nodejs 및 npm 설치
     - run: ls -al
