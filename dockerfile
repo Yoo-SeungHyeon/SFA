@@ -1,16 +1,18 @@
 FROM node:20.11
 
-RUN mkdir -p /app
+RUN mkdir front
 
-WORKDIR /app/
+WORKDIR /front
 
-COPY /front/package.json .
+COPY front .
 
-RUN npm install -g npm@10.5.0
+RUN npm install -g npm
 
 RUN npm install
 
-COPY front/build .
+RUN npm run build
+
+WORKDIR /front/build
 
 CMD [ "node","index.js" ]
 
