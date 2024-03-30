@@ -1,0 +1,12 @@
+npm run dev로 작업을 진행하고
+npm run build를 통해 build하려고 하면 오류가 발생한다.
+그 이유는 svelte.config.js 파일 때문이다.
+
+이 파일에는 
+import adapter from '@sveltejs/adapter-auto';
+라고 import 받는 것이 있으나 build할 때는 이를
+import adapter from '@sveltejs/adapter-node';
+로 바꿔줘야 한다. 그렇기에 그 방법을 적어둔다.
+
+1. npm install @sveltejs/adapter-node
+2. svelte.config.js 직접 변경
