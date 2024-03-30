@@ -11,7 +11,7 @@
                         <ul>
                             <li><a href="/Profile" >Profile</a></li>
                             <li><a href="/News" >News</a></li>
-                            <li><a href="/Blog" >Blog</a></li>
+                            <li><a href="/Board" >Board</a></li>
                             <li><a href="/Data" >Data</a></li>
                             <li><a href="/MLDL" >ML/DL</a></li>
                         </ul>
