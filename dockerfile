@@ -1,17 +1,17 @@
 FROM node:20.11
 
-WORKDIR /app
+RUN mkdir -p /app
 
-COPY front/package*.json ./
+WORKDIR /app/
 
-RUN npm install -g npm@latest
+COPY /front/package.json .
+
+RUN npm install -g npm@10.5.0
 
 RUN npm install
 
-COPY front/src .
+COPY front/build .
 
-RUN npm run build
-
-CMD [ "node", "index.js" ]
+CMD [ "node","index.js" ]
 
 EXPOSE 3000
