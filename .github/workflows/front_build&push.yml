@@ -7,55 +7,48 @@ name: Node.js Build & Docker Build, Push
 # 트리거 세팅: 수동, main브런치 push
 on:
   workflow_dispatch:
-  
   push:
     branches: [ "main" ]
 
 #job 생성
-jobs:
-  #job 이름 지정
-  build:
-    # 실행 환경 설정
-    runs-on: ubuntu-latest
-    # 순차 실행할 내용 세팅
-    steps:
-      # 리포지토리에 있는 내용 가져오기
-    - name: Checkout
+jobs:   
+  build:    #job 이름 지정  
+    runs-on: ubuntu-latest     # 실행 환경 설정
+    
+    steps:     # 순차 실행할 내용 세팅
+    - name: Checkout    # 리포지토리에 있는 내용 가져오기
       uses: actions/checkout@v4
-      # nodejs 및 npm 설치
+      with:
+        path: front
+      
+    # nodejs 및 npm 설치
     - run: ls -al
     - run: sudo apt update
     - run: sudo apt install nodejs
     - run: sudo apt install npm
 
-      # front 폴더에서 의존성 설치해서 build 진행
-    - run: cd front
-    - run: ls -al
+    # front 폴더에서 의존성 설치해서 build 진행
     - run: sudo npm i
     - run: sudo npm run build
-
-      # docker build를 위해 dockerfile이 있는 기존 위치로 이동 -> front 폴더에 dockerfile을 놔두면 더 좋을거 같음. 수정 예정
-    - run: cd ..
-    - run: ls -al
-
-      # 도커 buildx 설치
+    
+    # 도커 buildx 설치
     - name: Set Docker
       uses: docker/setup-buildx-action@v3
 
-      # dockerhub에 로그인
+    # dockerhub에 로그인
     - name: Login to DockerHub
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # image build & push
+    # image build & push
     - name: Build and push
       id: docker_build
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: yooseunghyeon/sfa:latest    # image명 및 태그 지정 -> 추후 버전 지정가능하게 세팅할 예정.
+        tags: yooseunghyeon/sfa:latest    # image명 및 태그 지정 -> 추후 버전이 자동으로 증가하게 세팅할 예정.
 
 
 
