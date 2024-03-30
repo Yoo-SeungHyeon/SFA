@@ -4,13 +4,15 @@ RUN mkdir -p /app
 
 WORKDIR /app/
 
-COPY /package.json .
+COPY front/ .
 
 RUN npm install -g npm@10.5.0
 
 RUN npm install
 
-COPY /build .
+RUN npm run build
+
+RUN cd build
 
 CMD [ "node","index.js" ]
 
