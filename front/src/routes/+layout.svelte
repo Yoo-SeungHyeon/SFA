@@ -27,7 +27,7 @@
         </nav>
     </header>
     <main class="container">
-        <slot />
+        <slot></slot>
     </main>
     <footer class="container">
         <nav>
