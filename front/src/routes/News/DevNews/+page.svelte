@@ -17,11 +17,10 @@
     ]
 </script>
 
-<!-- # 레이아웃 -->
 <nav>
     <div role="group">
         <a href="/News"><button class="outline" style="width: 100%;"><strong>All News</strong></button></a>
-        <a href="/News/DevNews"><button class="outline" style="width: 100%;"><strong>Dev News</strong></button></a>
+        <a href="/News/DevNews"><button class="outline" style="width: 100%; background-color:beige"><strong>Dev News</strong></button></a>
         <a href="/News/TechNews"><button class="outline" style="width: 100%;"><strong>Tech News</strong></button></a>
     </div>
 </nav>
@@ -29,7 +28,6 @@
 <hr>
 <br>
 
-<!-- # 내용 -->
 {#each News as news}
         <details>
             <summary role="button"  class="outline secondary" style="width: 100%;">
