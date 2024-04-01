@@ -1,15 +1,15 @@
 <script>
     const News = [
         {title:"개발 뉴스 001", contents:"개발과정에 발생하는 여러 이슈와 그 해결 과정에 대해서 기록합니다."},
-        {title:"기술 뉴스 001", contents:"새롭게 알게 된 기술이나 sfa에 적용된 기술에 대한 설명을 기록합니다."},
-        {title:"2",contents:"11"},
-        {title:"3",contents:"11"},
-        {title:"4",contents:"11"},
-        {title:"5",contents:"11"},
-        {title:"6",contents:"11"},
-        {title:"7",contents:"11"},
-        {title:"8",contents:"11"},
-        {title:"9",contents:"11"},
+        {title:"개발 뉴스 001", contents:"버튼을 누르면 필터가 적용되듯 원하는 주제만 볼 수 있습니다."},
+        {title:"2",contents:"222"},
+        {title:"3",contents:"222"},
+        {title:"4",contents:"222"},
+        {title:"5",contents:"222"},
+        {title:"6",contents:"222"},
+        {title:"7",contents:"222"},
+        {title:"8",contents:"222"},
+        {title:"9",contents:"222"},
     ]
     const page = [
         {id:1},{id:2},{id:3},{id:4},{id:5},
