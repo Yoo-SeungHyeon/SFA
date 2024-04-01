@@ -18,14 +18,25 @@
     ]
 </script>
 
-<div>
-    {#each News as news}
-    <details>
-        <summary class="outline secondary">{news.title}</summary>
-        <p>{news.contents}</p>
-    </details>    
-    {/each}
-</div>
+<!-- # 레이아웃 -->
+<nav>
+    <div role="group">
+        <button >All News</button>
+        <button class="secondary">Dev News</button>
+        <button class="contrast">Tech News</button>
+        
+    </div>
+</nav>
+
+<!-- # 내용 -->
+{#each News as news}
+        <details>
+            <summary role="button"  class="outline secondary" style="width: 100%;">
+                {news.title}
+            </summary>
+            <p>{news.contents}</p>
+        </details>
+{/each}
 
 <nav>
     &nbsp&nbsp&nbsp&nbsp&nbsp

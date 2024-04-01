@@ -5,7 +5,7 @@
             <ul>
                 <li>
                     <details class="dropdown">
-                        <summary class="secondary">
+                        <summary role="text" class="secondary">
                             <kbd>List</kbd>
                         </summary>
                         <ul>
@@ -49,13 +49,5 @@
 <style>
     body,main {
         min-height: 100vh;
-    }
-
-    .dropdown summary.secondary {
-    background: none; /* 배경 제거 */
-    border: none;     /* 테두리 제거 */
-    outline: none;    /* 포커스 아웃라인 제거 */
-    cursor: pointer;  /* 커서 스타일 변경 */
-    /* 필요한 추가 스타일링 */
     }
 </style>
