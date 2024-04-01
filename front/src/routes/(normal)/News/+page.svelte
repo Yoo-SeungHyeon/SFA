@@ -21,7 +21,7 @@
 <div>
     {#each News as news}
     <details>
-        <summary role="button" class="outline secondary">{news.title}</summary>
+        <summary class="outline secondary">{news.title}</summary>
         <p>{news.contents}</p>
     </details>    
     {/each}
