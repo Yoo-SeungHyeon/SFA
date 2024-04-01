@@ -52,3 +52,5 @@
 
     Fast API  : https://fastapi.tiangolo.com/ko/
     Sveltekit : https://kit.svelte.dev/docs/introduction
+    pico.CSS   : https://picocss.com/
+

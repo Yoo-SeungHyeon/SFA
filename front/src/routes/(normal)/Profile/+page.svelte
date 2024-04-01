@@ -9,7 +9,6 @@
             <li>Git & GitHub</li>
             <li>Github Action</li>
             <li>Docker</li>
-            <li>Nginx</li>
             <li>Airflow</li>
         </ul> 
 
@@ -24,6 +23,7 @@
             <li>Kafka</li>
             <li>Kubernetes</li>
             <li>Terraform</li>
+            <li>Nginx</li>
             <li>Apache</li>
         </ul>
 </article>
