@@ -41,7 +41,7 @@
     &nbsp&nbsp&nbsp&nbsp&nbsp
     <button class="outline contrast">이전 페이지</button>
     {#each page as p}
-        <p>{p.id}</p>
+        <a href="#">{p.id}</a>
     {/each}
     <button class="outline contrast">다음 페이지</button>
     &nbsp&nbsp&nbsp&nbsp&nbsp
