@@ -60,3 +60,4 @@
     Sveltekit : https://kit.svelte.dev/docs/introduction
     pico.CSS   : https://picocss.com/
 
+CSS :: shadcn <- 이걸로 ui를 만들면 편하다고 함.
