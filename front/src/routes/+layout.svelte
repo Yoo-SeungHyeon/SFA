@@ -14,6 +14,7 @@
                             <li><a href="/Board" >Board</a></li>
                             <li><a href="/Data" >Data</a></li>
                             <li><a href="/MLDL" >ML/DL</a></li>
+                            <li><a href="Whisper">Whisper</a></li>
                         </ul>
                     </details>
                 </li>
