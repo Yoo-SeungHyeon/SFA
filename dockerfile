@@ -4,7 +4,7 @@ COPY front .
 
 RUN npm install
 
-RUN npm run build
+RUN sudo npm run build
 
 WORKDIR /build
 
