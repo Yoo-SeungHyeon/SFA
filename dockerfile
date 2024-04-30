@@ -1,4 +1,4 @@
-FROM node:20.11
+FROM node:latest
 
 RUN mkdir front
 
