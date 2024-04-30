@@ -16,9 +16,9 @@
     ]
 </script>
 
-<body>
-    <header></header>
-    <main style="width: 80%; margin:auto;">
+<body style="width: 80%; margin:auto;">
+    <header><h1>Notice</h1></header>
+    <main>
         {#each News as news}
             <article>
                 <h2>{news.title}</h2>

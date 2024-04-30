@@ -1,7 +1,4 @@
-<script>
-
-</script>
-<bod>
+<body>
     <header> </header>
     <main>
         <div style="width: 80%; margin:auto; text-align:center;">
@@ -20,5 +17,5 @@
         </div>
     </main>
     <footer></footer>
-</bod>
+</body>
 
