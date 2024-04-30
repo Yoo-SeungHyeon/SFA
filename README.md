@@ -48,10 +48,7 @@
 [7] Login
 > 로그인을 통해 Blog에 글을 쓰고 Data를 공유할 수 있다.
 
-[8] Whisper
-> 음성을 텍스트로 변환해주는 Whisper AI를 활용하여 사용하기 편하게 만들어서 하나의 기능으로 사용 가능.
-
-[9] Chat
+[8] Chat
 > 간단한 채팅 기능 -> 편지 느낌
 
 ## 참고
@@ -59,5 +56,3 @@
     Fast API  : https://fastapi.tiangolo.com/ko/
     Sveltekit : https://kit.svelte.dev/docs/introduction
     pico.CSS   : https://picocss.com/
-
-CSS :: shadcn <- 이걸로 ui를 만들면 편하다고 함.
