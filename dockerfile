@@ -6,13 +6,19 @@ WORKDIR /front
 
 COPY front .
 
+RUN pwd
+
 RUN npm install -g npm
+
+RUN pwd
 
 RUN npm install
 
-RUN chmod +x node_modules/.bin/vite
+RUN pwd
 
 RUN npm run build
+
+RUN pwd
 
 WORKDIR /front/build
 
