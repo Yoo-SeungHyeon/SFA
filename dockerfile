@@ -1,10 +1,12 @@
-FROM node:alpine
+FROM node:latest
+
+RUN apt-get update && apt-get install -y sudo
 
 COPY front .
 
 RUN npm install
 
-RUN sudo npm run build
+RUN npm run build
 
 WORKDIR /build
 
