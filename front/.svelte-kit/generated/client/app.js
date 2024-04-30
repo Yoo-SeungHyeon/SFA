@@ -12,23 +12,22 @@ export const nodes = [
 	() => import('./nodes/8'),
 	() => import('./nodes/9'),
 	() => import('./nodes/10'),
-	() => import('./nodes/11'),
-	() => import('./nodes/12')
+	() => import('./nodes/11')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
-		"/": [3],
-		"/Board": [4,[2]],
-		"/Board/free": [5,[2]],
-		"/Board/hot": [6,[2]],
-		"/Board/member": [7,[2]],
-		"/Data": [8],
-		"/MLDL": [10],
-		"/Notice": [11],
-		"/Profile": [12],
-		"/login": [9]
+		"/": [2],
+		"/Board": [3],
+		"/Board/free": [4],
+		"/Board/hot": [5],
+		"/Board/member": [6],
+		"/Data": [7],
+		"/MLDL": [9],
+		"/Notice": [10],
+		"/Profile": [11],
+		"/login": [8]
 	};
 
 export const hooks = {
