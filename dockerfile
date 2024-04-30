@@ -10,6 +10,8 @@ RUN npm install -g npm
 
 RUN npm install
 
+RUN chmod +x node_modules/.bin/vite
+
 RUN npm run build
 
 WORKDIR /front/build
