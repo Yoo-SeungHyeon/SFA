@@ -6,6 +6,10 @@ WORKDIR /front
 
 COPY front .
 
+RUN apk update && apk add npm
+
+RUN pwd
+
 RUN pwd
 
 RUN npm install -g npm
