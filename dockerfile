@@ -1,12 +1,10 @@
-FROM node:latest
-
-RUN apt-get update && apt-get install -y sudo
+FROM node:20.11
 
 COPY front .
 
 RUN npm install
 
-RUN npm run vite build
+RUN npm run build
 
 WORKDIR /build
 
