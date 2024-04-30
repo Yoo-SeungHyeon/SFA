@@ -1,30 +1,12 @@
 FROM node:alpine
 
-RUN mkdir front
-
-WORKDIR /front
-
 COPY front .
-
-RUN apk update && apk add npm
-
-RUN pwd
-
-RUN pwd
-
-RUN npm install -g npm
-
-RUN pwd
 
 RUN npm install
 
-RUN pwd
-
 RUN npm run build
 
-RUN pwd
-
-WORKDIR /front/build
+WORKDIR /build
 
 CMD [ "node","index.js" ]
 
