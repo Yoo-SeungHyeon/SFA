@@ -6,7 +6,7 @@ COPY front .
 
 RUN npm install
 
-RUN npm run build
+RUN npm run vite build
 
 WORKDIR /build
 
