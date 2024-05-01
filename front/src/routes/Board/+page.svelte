@@ -1,3 +1,17 @@
+<script>
+    let boards = [];
+    
+    function get_boards() {
+        fetch("http://127.0.0.1:8000/board").then((response) => {
+            response.json().then((board_list) => {
+                boards = board_list;
+            });
+        });
+    };
+    
+    get_boards();
+</script>
+
 <body style="width: 80%; margin:auto;">
     <header>
         <h1>Board</h1>
@@ -10,64 +24,18 @@
                     <th>Date</th>
                     <th>Title</th>
                     <th>Writer</th>
-                    <th>Comment</th>
+                    <th>View</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2024-05-01</td>
-                    <td>Svelte Routing is So Hard</td>
-                    <td>ysh</td>
-                    <td>0</td>
-                </tr>
+                {#each boards as board}
+                    <tr>
+                        <td>{board.date}</td>
+                        <td>{board.title}</td>
+                        <td>{board.writer}</td>
+                        <td>{board.view}</td>
+                    </tr>
+                {/each}
             </tbody>
         </table>
     </main>

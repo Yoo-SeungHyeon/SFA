@@ -1,8 +1,7 @@
-<article>
-        <br>
-        <h1>Yoo SeungHyeon's Portfolio</h1>
-        <hr>
-        <br>
+<body style="width: 80%; margin:auto;">
+    <header><h1>Yoo SeungHyeon's Portfolio</h1></header>
+    <br>
+    <article>
         <h3>기술 스택</h3>
         <ul>
             <li>Python</li>
@@ -26,4 +25,6 @@
             <li>Nginx</li>
             <li>Apache</li>
         </ul>
-</article>
+    </article>
+</body>
+
