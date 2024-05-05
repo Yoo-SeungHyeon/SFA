@@ -1,23 +1,8 @@
 
 <body>
-    <header class="container">
+    <header class="container" style="height: 150px;">
         <nav>
-            <ul>
-                <li>
-                    <details class="dropdown">
-                        <summary role="text" class="secondary">
-                            <kbd>List</kbd>
-                        </summary>
-                        <ul>
-                            <li><a href="/Profile">Profile</a></li>
-                            <li><a href="/News" >News</a></li>
-                            <li><a href="/Board" >Board</a></li>
-                            <li><a href="/Data" >Data</a></li>
-                            <li><a href="/MLDL" >ML/DL</a></li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
+            <ul></ul>
             <ul>
                 <li><a href="/"><h1><em>Simple Fast Auto</em></h1></a></li>
             </ul>
@@ -26,10 +11,23 @@
             </ul>
         </nav>
     </header>
+    <nav style="height:30px;width:80%; margin:auto;">
+        <ul><li></li></ul>
+        <ul style="width: 80%;">
+            <li style="margin: auto;"><a href="/Profile">Profile</a></li>
+            <li style="margin: auto;"><a href="/Notice" >Notice</a></li>
+            <li style="margin: auto;"><a href="/Board" >Board</a></li>
+            <li style="margin: auto;"><a href="/Data" >Data</a></li>
+            <li style="margin: auto;"><a href="/MLDL" >ML/DL</a></li>
+        </ul>
+        <ul><li></li></ul>
+    </nav>
     <main class="container">
+        <hr>
         <slot></slot>
     </main>
     <footer class="container">
+        <hr>
         <nav>
             <ul>
                 <li><button class="contrast" disabled><strong>Yoo SeungHyeon</strong></button></li>
@@ -48,6 +46,6 @@
 
 <style>
     body,main {
-        min-height: 100vh;
+        min-height: 60vh;
     }
 </style>

@@ -1,18 +1,12 @@
 FROM node:20.11
 
-RUN mkdir front
-
-WORKDIR /front
-
 COPY front .
-
-RUN npm install -g npm
 
 RUN npm install
 
 RUN npm run build
 
-WORKDIR /front/build
+WORKDIR /build
 
 CMD [ "node","index.js" ]
 
