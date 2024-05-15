@@ -16,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-board_data = [{"date":"2024-05-01", "title":"rest api test", "writer":"ysh", "view":10},
+board_data = [{"date":"2024-05-14", "title":"board_test_11", "writer":"ysh", "view":10},
         {"date":"2024-05-01", "title":"rest api test", "writer":"ysh", "view":10},
         {"date":"2024-05-01", "title":"rest api test", "writer":"ysh", "view":10},
         {"date":"2024-05-01", "title":"rest api test", "writer":"ysh", "view":10},
